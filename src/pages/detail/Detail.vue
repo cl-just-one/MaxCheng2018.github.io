@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      axios.get('/api/detail.json?' + this.$route.params.id)
+      axios.get('/static/mock/detail.json?' + this.$route.params.id)
         .then(this.handleGetDetailSucc)
     },
     handleGetDetailSucc (res) {
